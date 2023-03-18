@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+
+  'financial-api':
+    build: ./
+    container_name: financial-api
+    working_dir: /srv/financial_api
+    volumes:
+      - ./:/srv/financial_api
+    ports:
+      - "80:80"
+    env_file:
+      - .env
+
