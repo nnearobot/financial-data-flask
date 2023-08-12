@@ -16,7 +16,7 @@ COPY Pipfile Pipfile.lock uwsgi.ini start.sh ./
 
 COPY financial ./financial
 COPY get_raw_data.py ./
-COPY .env.production ./.env
+COPY env.production ./.env
 
 COPY nginx.conf /etc/nginx/
 

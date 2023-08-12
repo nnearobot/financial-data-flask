@@ -1,6 +1,4 @@
 # Financial Data
-The goal of this take-home assignment is to evaluate my abilities to use API, data processing and transformation, SQL, and implement a new API service in Python.
-
 
 ## Retrieving the financial data of two given stocks (IBM, Apple Inc.)
 For retrieving the data [AlphaVantage](https://www.alphavantage.co/documentation/) API is used.
@@ -12,6 +10,9 @@ There is my own API key listed in both .env and .env.production files. As this k
 
 ## Developing mode
 For developing purpose we should install [Flask](https://flask.palletsprojects.com/en/2.2.x/), and also [pipenv](https://pipenv.pypa.io/en/latest/) for dependency managing.
+
+If no .env file is in the project root directory, please dublicate the env.sample file, rename it to .env, and specify the ALPHAVANTAGE_API_KEY parameter in it.
+
 Then from the application root directory run:
 ```
 ./dev_entrypoint.sh
